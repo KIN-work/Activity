@@ -5,6 +5,7 @@ html{
     transition: all .5s;
     overflow-y: scroll;
     box-sizing: border-box;
+    
 }
 
 html::-webkit-scrollbar {
@@ -14,11 +15,11 @@ html::-webkit-scrollbar {
 body {
     margin: 0;
     background-color: #EAEAEA;
+    width: 100vw;
+    height:100vh;
 }
 
 #header{
-    width: auto;
-    height: 100vh;
     background-color: #EAEAEA;
     position: relative;
 }
@@ -28,7 +29,7 @@ body {
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #252A34;
     transition: 1.5s;
@@ -47,7 +48,7 @@ body {
     display: inline-block;
     bottom: -20px;
     opacity: 0;
-    margin-left: 10cm;
+    margin-left: 20rem;
     transform: scale(1);
 }
 
@@ -70,7 +71,7 @@ nav {
     margin: 0 auto;
     background: #252A34;
     box-shadow: 0 2rem 3rem -0.75rem hsla(0,0%, 0%, 0.25);
-    padding: 10px 0;
+    padding: 0.1rem 0;
 }
 
 nav ul {
@@ -84,13 +85,13 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 15px;
+    padding: 1rem;
     font-size:large;
     text-decoration: none;
     color: #EAEAEA;
     font-weight: 800;
     text-transform: uppercase;
-    margin: 0 10px;
+    margin: 0 0.1rem;
 }
 nav ul li a,
 nav ul li a:after,
@@ -102,15 +103,18 @@ nav ul li a:hover {
 }
 
 .logo-nav{
-    width: 200px;
-    margin-left: 30px;
-    float:inline-start;
+    width: 10rem;
+    margin-left: 3rem;
+    display: inline-flex;
+    position: absolute;
+    margin-top: 1rem;
+
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 1rem 2rem;
 
 }
 
@@ -152,14 +156,14 @@ nav ul li a:hover::after{
     background-color: #F1C40F;
 }
 .header-text{
-    margin-left: 3cm;
+    margin-left: 3rem;
     margin-top: 15%;
     font-size: 30px;
 }
 
 .header-text button{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 2rem;
 
 }
 
@@ -169,9 +173,9 @@ nav ul li a:hover::after{
 }
 
 .header-pages{
-    margin-left: 23cm;
+    margin-left: 50rem;
     margin-top: -10.5cm;
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
     float: left;
 }
@@ -254,7 +258,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
-    margin-left: 2cm;
+    margin-left: 2rem;
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 2rem 3rem -0.75rem hsla(0,0%, 0%, 0.25);
@@ -338,7 +342,7 @@ nav ul li a:hover::after{
 
 .slide-wrapper{
     position: relative;
-    max-width: 84rem;
+    max-width: 55rem;
     margin: 0 auto;
 }
 
@@ -358,7 +362,6 @@ nav ul li a:hover::after{
 
 .project{
     display: flex;
-    
 }
 
 #slide1,#slide2,#slide3 {
@@ -449,13 +452,15 @@ nav ul li a:hover::after{
 
 .contact-left{
     margin-left: 8cm;
-    margin-top: 5cm;
+    margin-top: 2rem;
     flex-basis: 35%;
+    margin-bottom: 5rem;
 }
 .contact-right{
     margin-left: 20cm;
     margin-top: -8cm;
     flex-basis: 60%;
+    margin-bottom: 5rem;
 }
 .sub-title{
     font-size: 60px;
@@ -545,7 +550,7 @@ form input, form textarea{
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    bottom: 23px;
+    bottom: 4rem;
     right: 28px;
     width: 280px;
     text-align: center;
@@ -559,7 +564,7 @@ form input, form textarea{
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
+    bottom: 2rem;
     right: 15px;
     border: none;
     z-index: 9;
@@ -716,7 +721,14 @@ footer * {
     .row.primary {
     grid-template-columns: 1fr;
     }
+
+    html{
+    height: 100vh;
+    width: 100vw;
+    }
 }
+
+
 /*
 #F1C40F
 #08D9D6
